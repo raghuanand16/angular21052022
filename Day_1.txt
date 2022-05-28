@@ -1,0 +1,243 @@
+Course Agenda - Day 1 
+
+Evolution of Internet
+
+1960's - US Army - bases all over the world - secret communication - connected all these bases together - results in creation of Network
+- private Network
+
+1980's - Corporate Companies, Banks, Insurance Companies, etc.. - branches all over the world - secret communication - connected all these branches together - results in creation of Network
+- private Network
+
+1990's => Public Network - Internet
+			=> anyone from anywhere can communicate with anyone located from anywhere
+
+A langugae called as markup langugae was introduced, using this lang they created documents that was transfered from one point to another.
+
+Multiple markup !!!
+Most widely used markup lang - HTML - Hyper Text Markup Language
+
+These documents were dull
+They wanted to have a better user experience, as a result css was introduced. It was used to add styles
+
+These documents were static in nature !!!
+
+static => user cannot communicate with the document.
+dynamic => user can communicate with the document.
+
+To make the these static documents into dynamic -> JavaScript was Introduced
+
+Intinially when JS was introduced - tilted towards procedure oriented concepts(Less Featured lang)
+
+	Because of this we can build only simple dynamic websites
+
+In 2005 - ES5 - JavaScript Version 5 - was converted / tilted towards object oriented concepts(More Featured lang)
+
+	From 2005 onwards, JS can be used to build complex dynamic websites.
+		More user startes to use JS,
+			reusable code = so many reusable code were created. 
+
+Pople used them to create libraries (collection of reusable code)
+	Eg: Ajax, Jquery, etc....
+
+Web Application - Architecture
+	3 sections/parts
+	Front End = JS
+	Back End = Java / Python / C++ / Dotnet / PHP / Ruby etc...
+					 Nodejs
+			
+	Database
+
+what is used Access the web application => Browser
+Every Browser has js compiler - inbuilt
+
+Ryan - how to bring a common language that can be used in both front end and back end ???
+
+Google - big break to him
+Google Chrome - JS compiler - V8 Engine - even today it is the fastest js compiler - Made this v8 Engine open source !!!
+
+Ryan => V8 engine + own libraries(c++ lang) => Nodejs
+
+Everyone started to love this => huge boom in Javascript
+
+More Libraries created...................
+
+Framework - Collection of libraries.
+	Angularjs
+	Reactjs
+	Vuejs
+	Nextjs
+	Ember
+	etc.......
+
+Problems developer were facing
+=> Developer - he gets the req from client - write code - execute them - solution
+
+Non It Person - execute the code to get the solution ???
+
+client => product - used only IT person !!!
+
+Now client - pressurised developer - build me a product which can be used by everyone
+
+Developer => Code + Created a Interface on top of the code.
+
+Developer faced some challenges
+	start creating interface first ??
+	start creating code first ??
+
+To answer this issue i.e. start => SDLC Model
+
+how to bring the interface and the code together => Architecture
+How to integrate them together into a single piece i.e. product
+
+Interface - Front End
+Code - Back End + Data
+
+		SDLC Model
+			Agile Model - Scrum Framework, Kanban, XP, Hybrid, etc...
+
+		Architecture
+			Microservices
+
+Architecture
+1 tier => single container => wrap both the interface and code together => tightly coupled archiecture => you cannot make any changes later
+
+2 tier => single container => 2 separate sub containers => one had inerface and the other had code => tightly couple architecture
+
+3 tier => single container => 3 separate sub conainers => one had the interface(FE), second had the logic(BE), third had the data(DB). => tightly coupled architecture
+
+3 tier was arranged in a linear shaped
+
+interface
+logic
+data
+
+MVC architecture => similar to 3 tier architecture but the arrangement was in a triangular shape
+
+										Interface
+							Logic							Data
+
+Microservices architecture => Multiple containers.... => Loosely coupled architecture
+
+client = ecommerce visits you
+
+ecommerce with cloths, electronics and Food
+1 year to complete this project
+
+After 1 year he is going to start making money
+
+1 server - 1000 people
+
+Agile Model
+
+=> client = ecommerce visits you
+
+ecommerce with cloths, electronics and Food
+1 year to complete this project
+
+The project is divided into different parts. Here it will be divided into 3 diff categories
+Each category - 4 months
+
+After 4 months he is going to start making money
+	For every deployment you will have a container
+	3 diff containers
+
+Design the architecture the way you want
+
+categories separated to each other
+can we further divide the category itself into 3 diff layers i.e. FE, BE and DB => Yes !!!!
+	Eg: Mulesoft Integration Tool => API LED CONNECTIVITY
+
+Introduction to Angular
+	Web Appln Development
+		=> It is process of developing a application that can be used in the web.
+		=> Client and Server. These client will make a request to the server and the server will respond back to the client
+		=> Diff Names
+			Client				Server				Database
+			Browser				Backend				
+			FrontEnd			publisher
+			subscriber
+			View					Controller			Model
+			Presentation		Logic					Data
+			User Interface
+
+	Front End and Back End
+
+	Front end is the presentration layer ie. views
+			HTML, CSS, JS, front end frameworks, front end styling frameworks, etc.....
+
+	Back End is the Logic Layer i.e. Controller + Data Layer i.e Model
+
+MVC - Model View Controller
+
+Whenever youget the data from teh server the browser will refresh.
+caching - temporary storage in the browser
+
+	SPA Vs MPA
+
+MPA
+=> Multiple Page Application
+=> The page was getting refreshed and every time it was downloaded from the server
+=> Bandwidth is getting wasted
+=> Server is getting too many requests
+=> server is getting Overloaded
+=> Caching is not available
+=> first request will be fast
+
+SPA
+=> Single Page Application
+=> first request will be little slow compared MPA
+=> Entire Application is downloaded Once.
+=> The page was not getting refreshed and Hence every time you are not downloading from the server
+=> Bandwidth is getting saved
+=> Server is not getting too many requests
+=> server is not getting Overloaded
+=> Caching is available
+
+What is Angular
+=> It is a Front End Framework which implements SPA architecture.
+
+1st version of Angular => AngularJS = JavaScript
+2nd version of Angular onwards => Angular = TypeScript
+				Angular 2, Angular 3, etc...... 
+			> Angular 8
+
+Typescript
+
+ECMA => European Computer Manufacturing Association - came together
+		=> they decided a standart to be followed based on which they will create teh application
+
+	= ECMA Script
+		From ECMA Script => JavaScript, TypeScript
+
+	ECMA Script -> ES, ECMAScript, ECMA, EScript, etc...
+
+	ES1, ES2, ....ES5, ES6, ETC......
+
+
+TS => ES + ES5 + ES6 + Transpiler(It is used to convert TS into JS)
+
+MVC Architecture
+
+Angular Architecture => MVVM Architecture	(Explain Pending)
+
+View		ViewModel		Model
+
+Install Angular
+	angular cli - library - install all other libraries and also it configures them.
+
+Install Nodejs
+	In nodejs we have a tool called as npm(Node Package Manager)
+
+package = Modules/ libraries/ dependencies /3rd party library/ functions/ directives / etc..... 
+
+Install VSC - Visual Studio Code - IDE 
+
+
+Feedback
+	Instrcutor => 
+		Excellent
+		Good	=> comment !!!
+		Average => comment !!!
+		Bad => comment !!!
+
+	Content => syllabus, content, technical problems

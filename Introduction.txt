@@ -1,0 +1,72 @@
+Good Morning Everyone :)
+
+Welcome to Angular Session
+
+Agenda
+	Instructor Introduction
+		Raghu Anand
+		Senior Technical Instructor @ MNC - US Based
+		Mulesoft, DevOps, Cloud and Full Stack related Courses
+		Part time Instructor - Full Stack related Courses
+		11 years of Exp
+			3 years - developer
+			8 years - Instructor
+		With Edureka this is my 5th Angular Batch.
+
+		Consultant, Advisor to Startup, Design Course and Content
+
+		2k+ Candidates
+		100+ Batches	(1 person, max - 147 - azure cloud)
+
+		Teaching
+		Learn new technologies
+		
+	Participant Introduction
+		Name, Education Background, Experience, Place of Origin, Hobby
+
+Eg: Raghu Anand, BE(ISE), 11 years, Bangalore(KA), Reading and playing pubg
+
+	70% - >10 exp years
+	15% - < 10 exp years
+	15% - 0 exp
+
+	60% - Different Domain - Non IT
+	40% - IT Domain
+
+	Almost 100% - Zero Exp in Angular
+
+Basic level from all concepts
+Medium Pace
+
+	Course Agenda
+		D1 - Introduction and Angular
+		D2 - Modules and Components
+		D3 - DataBinding in Angular and Animations i.e. Styling
+		D4 - Directives and Pipes
+		D5 - Services and DI
+		D6 - RxJs and HTTPClient
+		D7 - Routes and Navigation
+		D8 - Angular Forms
+		D9 - Validate this Forms
+		D10 - Authentication (jwt)
+		D11 - Test the application and how to deploy the appl
+		D12 - In class Project
+					Similar to Makemytrip !!!
+
+Pre-requisite for this course
+	JavaScript !!!
+		Basic
+
+	TypeScript
+		Basic and Intermediate
+
+	JS5, JS6
+
+	Key Points - Remember
+	=> Audio, Video and Internet Connection
+	=> Tasks, Assignments, Regular to the class
+
+	Questions
+	=> Humble req !!!
+
+	Questions ???

@@ -1,0 +1,108 @@
+Summary of Day 1
+
+npm Error! network 'proxy' config........................
+
+npm config rm proxy
+npm config rm https-proxy
+
+ng new firstproject
+
+Lets consider => application = 100 MB 
+user tries to access this application in his browser
+He is gonna make a request => bandwidth speed of 10MB/Second => 10 sec
+
+SPA = what happends during the 1st req => Entire application will be downloaded
+
+This was the problem that SPA Applications faced.
+
+To overcome this problem, they divided the entire application into small pieces of UI.
+	Lets they divided into 10 pieces each 10 MB
+
+	For fetching the entire application by the same user => 10 sec
+
+	These pieces are called as Components. In this application - 10 components are
+present.
+	The components will be downloaded one by one.
+
+
+
+Struture of the Angular Project
+
+.vscode = indicates that this project's default IDE is VS Code.
+node_modules= The entire dependencies of the project is stored inside this folder
+src = source folder which will have your root level entry for the project
+.browserlistrc = browser configuration i.e. it is used to target the browser while execution.
+.editorconfig = It has the configuration for your code editor.
+.gitignore = Used to tell teh git tool to ignore the files that we dont want to be captured/committed/staged
+angular.json = CLI Configuration about your project, how to execute, hot to build, etc...
+karma.conf.js = It has the karma specific configuration settings
+package-lock.json = Info about your dependencies and the further dependencies. (Similar to a meta file)
+package.json = It has the details about the project.
+	2 parts, Description Data and Functional Data
+Readme.md = description of the project
+tsconfig.app.json = Application specific Typescript configuration
+tsconfig.json	= Typescript configuration
+tsconfig.spec.json = Used to COnfigure the application tests.
+
+assests folder = Used to store the static files 
+index.html = Entry to your angular application
+	The index.html is connected to main.ts
+main.ts = Entry point of your application
+polyfills.ts = Provides scripts that can be used to make sure we get the browser support
+styles.css = Styles for your project
+test.ts = Main Entry for executing your test cases.
+environments folder => It has the configuration that can be used to build the type of environment we require...
+Eg: dev env, test env, prod env, sandbox env, etc..
+
+app => It is a component
+
+app-routing.module.ts = Used for Routing purpoese on the Browser side
+app.component.css => components' style
+app.component.html => component's html
+app.component.spec.ts => component's unit test
+app.component.ts => This file will have the entire logic of your app component defined
+app.module.ts => Root Module will have the info about all the components within the project
+
+Execute the project
+ng serve
+
+Flow of Angular Project
+
+localhost:4200 
+=> redirected to index.html 
+=> you have been redirecred to app-root
+=> to check whether such a component exists or not it will go to the app.module.ts file 
+=> the app.module.ts will search for the app-root inside its component decleration => The app.module.ts after finding the given app-root it will redirect the user to its component (App Component) 
+=> The components's html page will be thrown back to the user 
+=> Will get the app index page as a response !!!!
+
+Components
+=> Small Pieces of your UI
+=> Block of coded
+=> Each component will perform a specific task
+=> We can reuse them
+=> All the components are integrated - appmodule location
+
+Create a component
+2 ways
+	1. Manual approach
+		Create a folder with a name for the component
+		Inside this folder you have to create html, css and ts
+		Update the component name in the App.Module File
+	
+	2. Using the angular cli command we can generate the component
+			ng generate component name_of_the_component
+			ng g c name_of_the_component
+			By default the generated component will be created inside the app folder
+
+Bootstrap Frameowrk - Mother of all the frameworks
+=> This framework has predefined css and predefined scripts
+=> css file and js file provided by Bootstrap
+=> I just have to add them in my project to use them.
+=> WIth the help of this framework we can design the web application faster and with best practises.
+=> Help the developer to concentrate on developing the code instead of wasting the time in desinging the application
+
+Material UI - Google
+Tailwind CSS
+Foundation 6
+etc.....
