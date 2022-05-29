@@ -1,0 +1,41 @@
+Day 4
+	Directives = These are some special instructions that are given to the DOM for manupilation purposes
+	Pipes = These are utilities that can be used to transform the data from one format to another format.
+
+<html>
+	<head>
+		<title>Hello</title>
+	</head>
+	<body>
+		<p title="Hello">Hello</p>
+		<h1>Hello</h1>
+	</body>
+</html>
+
+DOM - Documetn Object Model
+	 - It is a tree like represntation of the HTML Document
+	- where each html element is considered as a node.
+
+Different Types of Directives
+	Component Directive	=> selector
+	Structural Directive
+		=> It is used to manipulate the structure of your DOM.
+		*ngIf	= Demo Done
+
+Next Session		
+		*ngFor
+		ngSwitch
+		=> These are used only on HTML.
+
+	HTML Layer => structural layer
+	CSS Layer => presentation layer
+	TS Layer => Interaction Layer
+
+	Attribute Directive
+	Custom Directive
+
+Differet Types of Pipes
+	BuiltIn Pipe
+	Custom Pipe
+
+	

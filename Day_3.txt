@@ -1,0 +1,267 @@
+https://github.com/raghuanand16/angular21052022.git
+
+Very Good Morning Everyone :)
+
+Lets wait for another 3/4 min, Since people are yet to join.
+Thanks in advance.
+
+Summary of Day 1&2.
+
+Bootstrap
+	1. Adding CDN
+	2. Downloading the bootstrap files and link it in your index.html
+	3. Using a npm dependency called as bootstrap
+
+While using the dependency from npmjs.com make sure you get it approved from your company. Do not get them installed blindly !!!
+
+
+Bootstrap - predefiend css and js
+	Tailwind CSS
+Bootstrap icons - Icons
+	Font Awesome!!
+
+Decorator -> It is a form of template
+The most widely used decorator is @component. And @ denotes the decorator
+
+	@component template is made up of various options
+	selector
+	styleUrl
+	templateUrl
+	
+In css - 3 types - inline, internal and external
+
+External sheet is the standard pratise !!
+
+templateurl Vs template
+
+Styleurl Vs style
+
+Selectors =>
+	Element Selector	name_of_the_element
+	Class Selector		.
+	Id Selector			#
+	Universal Selector	*
+	Group Selector			,
+	Child Selector		space
+	Pseduo Selector	:
+
+OOPS Concept
+	Inheritance
+		class, abstract class and interface class
+
+class -- class =>			extends
+class -- interface => 	implements
+
+class	Interface
+	M1		M3
+	M2	
+
+ES6 Concepts
+
+import var_name from 'module_name'
+// module_name has 100 methods
+var_name.method1
+
+import { method1 } from 'module_name'
+
+export
+
+export default class_name
+
+ES5 Concepts
+const var_name = require('module_name')
+
+//module.exports = class_name
+
+Day 3 Agenda => DataBinding and Animations
+
+What is Databinding
+=> It is used to bind the data
+=> bind - bringing it together or It is a bridge which connects and lets you pass data through it.
+
+Why Databinding in Angular
+VIEW 				VIEW-MODEL 		MODEL
+HTML				TS						Data from BE
+												API
+
+To bind the data from TS to HTML or viceversa we implement the concept called as DataBinding
+
+2 diff Categories of DataBinding based on the flow of data, namely:
+1. One Way Databinding
+		Usually it is from html to ts
+2. Two Way Databinding
+		It is on both the sides, html to ts and parallelly it will also be ts to html
+
+Types of DataBinding - 6 diff types
+	String Interpolation
+	=> <p>{{ var_name }}</p> =>html page
+			let var_name = "Hello I am From Mars"	=> ts
+
+	Property Binding
+	=> It is the attribute which is used in the opening tag of the HTML Element
+	=> <p [title]="var_name">Property</p> => html page
+			let var_name = "Hello I am From Mars"	=> ts
+
+style, width, height, etc...
+	
+	Event Binding
+	=> Button or anchor tags or trigger
+	=> > 106 events
+	Eg: onClick, OnChange, onMouseIn, oNMouseOut, onkeyin, onkeyout,
+onkeypress, etc......
+
+	=> <button (onclick)="var_name">Click Here</button> => html page
+			let var_name = (arguments) => {statements}	=> ts
+
+	2 way binding
+	=> combination of your Property Binding + Event Binding + a in build module called as ngModule
+
+	<input type="text" [value]="var_name" [(ngModel)]/> => html page
+			Type = India
+			
+			let var_name = "Hello I am From Mars"	=> ts
+					var_name = " India"
+
+	Custom Property Binding
+	Custom Event Binding
+
+
+function fname(arguments){
+	//statements => return keyword - result
+}
+
+//function definition
+function add(int c,int d){
+	return c + d
+}
+
+add(5,7)	=> function call
+
+In ES6 - a new shorthand property for function was defined called as Arrow Functions
+Set of Rules:
+1. If there is only one argument, then no need to use the ()
+2. No need to use the return Keyword.
+		single statement => statement
+		Multiple statement => to enclose the entire block within ()
+3. If there is a single statement, then no need to use the {}
+4. No need to use the function keyword, instead we use the => symbol.
+The arrow symbol will be placed in between the arguments and function definition
+5. We will assign the function definition as a value to a variable. This variable will act as the function name.
+
+function add(int c){
+	return 5 + c
+}
+add(3)
+
+add = c => 5 + c
+add(3)
+
+function add(c,d){
+	return c+d
+}
+
+add = (c,d) => c+d
+
+
+function add(c,d){
+	let a = 10
+	let b = a - c
+	return b+d
+}
+
+add = (c,d) => ({
+	let a = 10
+	let b = a - c
+	return b+d
+})
+
+Diff Approaches used by the Components to Interact
+1. Using the @Input Decorator
+	It is used to provide a input to a component
+	The data flow occurs from a parent component to a child component
+
+	parent => in ts - declared the name
+				html - using binding technique i brough the dclared name and passed it to the child withint the selector tag.
+
+	child => The child is triggered with the help of selector and it can also access the data from the selector tag.
+		in ts - you saved the incoming data using @Input decorator
+		html - Using some binding method you accessed the variable which was used to store the incoming data.
+
+
+2. Using @Output Decorator
+	Here the data is emitted and it is absorbed by a component.
+	The data flow occurs from a child cvomponent to a parent component
+
+	Do it as a Task.
+
+3. Routes
+	you can move from any component to another component
+
+4. Services
+
+Angular Animations - DIY
+
+Life cycle Methods
+=> These life cycle methods are those methods which can be used to manupilate the component's life cycle
+	ngOnInit Method	=> These method will be called after the component is Initialized
+
+	ngOnChanges => These method is called whenever there is a data received by the component
+
+	ngDoCheck	=> These method will check whether the component's behaviour is appropriate or not
+		component behviouar => update, etc...
+
+	ngOnDestroy => It is called before a component is being destroyed. It is just a clean up method.
+
+Precedeence
+
+	Constructor(default data) => ngOnChanges - first time =>   ngOnInit => later when ever yoiu have a change in data, ngOnchanges will be triggered again and again !!!
+
+	//component with default data up and running !!!
+
+//Task 1: Angular Animations - DIY
+//Task 2 : Implement @Output Decorator
+
+
+employee.ts
+
+export interface Iemployee{
+	Employee_Id: string ,
+	First_Name: string,
+	...
+	..
+}
+
+employee.compoent.ts
+
+import { Iemployee } from './employee'
+
+EmployeeObject: Iemployee[] = [{
+								Employe_Id: ''kjsdgf,
+								First_Name: ''
+},{},{},{},{}]
+
+showEdit: Boolean = false
+
+EditEmp = () => {
+	showEdit = true
+}
+
+updateEmp = () =>{
+	showEdit = false
+}
+
+employee.component.html 
+
+ngfor* iterate all the objects from the array !!
+
+<table>
+	<tr >
+		<td><input type="text" [(ngModel)]=''> {{ i.Employe_Id }}</input></td>
+		<td>
+		............
+		<td> 
+			<div ngif* >
+					<button	event binfind = EditEmp>Edit</button>
+					<button 						updateEmp>Update</button>
+			</div>	
+		</td>
