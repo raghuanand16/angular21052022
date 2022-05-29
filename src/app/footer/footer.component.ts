@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'; 
+import { Component, Input, OnInit } from '@angular/core'; 
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  myName = 'Hello I am From Mars'
+  myName = 'Hello I am From Mars' 
 
+  @Input('dataFromParent') name: any
+  //name = 'I am sending you some data'
 
+  @Input('data2') name2: any
 
   constructor() { }
 
